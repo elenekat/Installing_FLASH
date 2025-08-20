@@ -198,7 +198,7 @@ Check if you have all three of them in this directory:
 download the tar file and untar it (change name for different versions):
 
 ```bash 
-tar zvf FLASH.4.8.tar
+tar zvf FLASH4.8.tar
 ```
 
 <br> 
