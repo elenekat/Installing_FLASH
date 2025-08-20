@@ -8,7 +8,6 @@ We need to install dependencies. Open terminal and copy these commands there.
 * Python (you can get it from python.org if you don't have it already)
 * "make" utility
    
----
 # step-by-step commands to get everything:
 ### xcode
 
