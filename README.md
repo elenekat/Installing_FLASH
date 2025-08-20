@@ -2,6 +2,10 @@
 
 We need to install dependencies. Open terminal and copy these commands there.  
 
+
+
+
+
 # Some easy dependencies we need: 
 * C compiler
 * Fortran compiler
@@ -62,6 +66,10 @@ brew install svn
 go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and install appropriate dmg for your computer. 
 
 ---
+
+
+
+
 
 # more tricky dependencies that we need to install: 
 * MPI
