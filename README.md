@@ -7,7 +7,6 @@ There is 4 steps:
 4. fight with errors until it agrees to compile
 
 # 1. Install dependencies
-Open terminal and copy these commands there.  
 
 ## Some easy dependencies we need: 
 * C compiler
@@ -15,7 +14,7 @@ Open terminal and copy these commands there.
 * Python (you can get it from python.org if you don't have it already)
 * "make" utility
 
-To get them we need: 
+Open terminal and copy these commands there. We will need:
 ### xcode
 
 ```bash 
