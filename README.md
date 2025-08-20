@@ -256,8 +256,9 @@ This should be it. Try running some test problem now. Some errors might arise wh
    ```bash Error: Cannot open module file ‘cond_interface.mod’ ```
    and it was fixed after using make clean
 
-* ```bash gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```:
-     Add this to the Makefile.h:
+* ```bash gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
+     <br>
+     To fix it add this to the Makefile.h:
      ```bash LIB_LAPACK = -llapack```
 * Some errors might be answered in FLASH emails. 
 
