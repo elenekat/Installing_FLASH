@@ -249,7 +249,7 @@ Some errors might arise while trying to compile.
 
 ### Errors that I had:
 
-* Some of other errors I had were fixed after using
+Some of other errors I had were fixed after using:
 
 ```bash
 make clean
@@ -258,7 +258,7 @@ error I had:
 ```Error: Cannot open module file ‘cond_interface.mod’ ```
 and it was fixed after using make clean
 
-* ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
+```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
 <br>
 To fix it add this to the Makefile.h:
 ```fortran
@@ -292,7 +292,7 @@ FFLAGS_HYPRE = -I${HYPRE_PATH}/include
 CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
 
-* Some errors might be answered in FLASH emails.
+Some errors might be answered in FLASH emails.
 error I had:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
 in Makefile.h comment out line “iso_c_binding.mod".
