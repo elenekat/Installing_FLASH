@@ -245,18 +245,16 @@ This should be it. Try running some test problem now.
 
 # 4. Fighting Errors
 
-Some errors might arise while trying to compile.
-
-### Errors that I had:
+There might be some errors when trying to compile. 
 
 Some of other errors I had were fixed after using:
 
 ```bash
 make clean
 ```
-error I had:
+For example, error I had:
 ```Error: Cannot open module file ‘cond_interface.mod’ ```
-and it was fixed after using make clean.
+was fixed after using make clean.
 
 Another error I had: ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
 <br>
@@ -292,7 +290,7 @@ FFLAGS_HYPRE = -I${HYPRE_PATH}/include
 CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
 
-Some other errors are be answered in FLASH emails.
+Some errors are be answered in FLASH emails.
 Error I had:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
 to fix it in Makefile.h comment out line “iso_c_binding.mod".
