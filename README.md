@@ -1,6 +1,10 @@
 # Installing FLASH on MacOS
 
-We need to install dependencies. Open terminal and copy these commands there.  
+There is 3 steps: we need to install dependencies for FLASH, download and untar code itself and change paths for dependencies:
+
+# 1. Install dependencies
+Open terminal and copy these commands there.  
+
 <br>
 <br>
 <br>
@@ -72,6 +76,7 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 <br>
 <br>
 <br>
+
 # more tricky dependencies that we need to install: 
 * MPI
 * HDF5
@@ -105,7 +110,10 @@ brew make -j all
 sudo make install
 ```
 
+using sudo will ask you for password.
+
 this is version 4.1.4, if you for some reason need newer version, you can download it from: https://www.open-mpi.org/ 
+Same is for hdf5 and hypre you can update to newer version but this versions work fine too. 
 
 ---
 ### hdf5
@@ -185,12 +193,58 @@ You should see there 3 directories with the source for openMPI, hdf5 & hypre whi
 
 Check if you have all three of them in this directory: ```bash /usr/local/flash-deps```
 
+---
+<br>
+<br>
+<br>
 
+# Get FLASH Code
 
+download the tar file of code in whichever directory you want and untar it in that directory (change name with whichever version you have):
 
+```bash 
+tar zvf FLASH.4.8.tar
+```
 
+# Change Makefile.h
+We need to change paths to the dependencies in Makefile.h file. 
+Makefile.h is in ```bash sites/Prototypes/Darwin``` directory.
 
+in this file paths for dependencies should look like this:
 
+```fortran
+#HDF4_PATH =
+HDF5_PATH = /usr/local/flash-deps/hdf5
+#LIB_HDF5 = ${HDF5_PATH}/lib
+
+ZLIB_PATH  =
+
+PAPI_PATH  =
+PAPI_FLAGS =
+
+LIB_NCMPI = /usr/local/flash-deps/openMPI
+MPE_PATH   =
+MPI_PATH = /usr/local/flash-deps/openMPI
+
+HYPRE_PATH = /usr/local/flash-deps/hypre
+```
+
+and also need to change this lines:
+
+```fortran
+FCOMP   = $(MPI_PATH)/bin/mpif90
+CCOMP   = $(MPI_PATH)/bin/mpicc
+CPPCOMP = $(MPI_PATH)/bin/mpiCC
+LINK    = $(MPI_PATH)/bin/mpif90
+```
+
+This should be it. Try running some test problem now. 
+
+Some errors might arise while trying to compile. Some of them were fixed after using 
+
+```bash 
+make clean
+```
 
 
 
