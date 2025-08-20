@@ -2,7 +2,7 @@
 
 We need to install dependencies: 
 
-#### easy ones: 
+## easy ones: 
 * C compiler and "make" utility
 * Fortran compiler
 * Python (you probably have it, or you can get it from python.org)
@@ -42,7 +42,7 @@ This should be it. To check if we have it installed and up to date:
 ### gfortran
 go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and install appropriate dmg for your computer. 
 
-#### more tricky dependencies: 
+## more tricky dependencies: 
 * MPI
 * HDF5
 * HYPRE
