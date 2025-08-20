@@ -8,7 +8,6 @@ We need to install dependencies. Open terminal and copy these commands there.
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
    
----
 to check if you have something you can type in terminal:
 ```bash
 which python
@@ -26,6 +25,8 @@ xcode-select --install
 ```
 
 This installs the Xcode Command Line Tools package, not full xcode. We need this to get C compilers, git and tools like "make". 
+
+---
 
 ### Homebrew
 We need package manager to install tricky dependencies for FLASH. Recommended one is Homebrew (go to https://brew.sh/ for all information):
@@ -55,9 +56,12 @@ brew update
 ```bash 
 brew install svn
 ```
+---
 
 ### gfortran
 go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and install appropriate dmg for your computer. 
+
+---
 
 ## more tricky dependencies that we need to install: 
 * MPI
