@@ -50,6 +50,8 @@ or if you just want to check which version you have:
 brew --version
 ```
 
+---
+
 ### SVN
 ```bash 
 brew install svn
