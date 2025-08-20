@@ -9,7 +9,7 @@ We need to install dependencies. Open terminal and copy these commands there.
 * "make" utility
    
 ---
-
+# step-by-step commands to get everything:
 ### xcode
 
 ```bash 
