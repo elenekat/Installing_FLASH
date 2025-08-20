@@ -15,7 +15,7 @@ There is 4 steps:
 * "make" utility
 
 Open terminal and copy these commands there. We will need:
-### xcode
+### 🚀 xcode
 
 ```bash 
 xcode-select --install
