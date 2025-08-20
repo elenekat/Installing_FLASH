@@ -256,9 +256,9 @@ make clean
 ```
 error I had:
 ```Error: Cannot open module file ‘cond_interface.mod’ ```
-and it was fixed after using make clean
+and it was fixed after using make clean.
 
-```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
+Another error I had: ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
 <br>
 To fix it add this to the Makefile.h:
 ```fortran
@@ -292,10 +292,10 @@ FFLAGS_HYPRE = -I${HYPRE_PATH}/include
 CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
 
-Some errors might be answered in FLASH emails.
-error I had:
+Some other errors are be answered in FLASH emails.
+Error I had:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
-in Makefile.h comment out line “iso_c_binding.mod".
+to fix it in Makefile.h comment out line “iso_c_binding.mod".
 
 
 
