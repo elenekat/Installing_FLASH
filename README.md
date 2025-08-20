@@ -1,4 +1,54 @@
 # Installing_FLASH
+
+We need to install dependencies: 
+
+#### easy ones: 
+* C compiler and "make" utility
+* Fortran compiler
+* Python (you probably have it, or you can get it from python.org)
+
+  to check if you have something you can type in terminal:
+  ```bash which python  ```
+  or
+  ```bash python --version  ```
+  
+Open terminal and copy these commands: 
+
 ### xcode
 
 ```bash xcode-select --install ```
+
+This installs the Xcode Command Line Tools package, not full xcode. We need this to get C compilers and git installed and tools like "make". 
+
+### Homebrew
+We need package manager to install tricky dependencies for FLASH. Recommended one is Homebrew (go to https://brew.sh/ for all information):
+
+```bash /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ```
+
+follow directions in terminal: you will need to enter your admin password and then it will tell you what it is going to install and ask you to click enter.
+
+next step is to add brew in your path. It will tell you which two commands to run it will be two commands like this: 
+
+```bash echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc  ```
+```bash eval "$(/opt/homebrew/bin/brew shellenv)"  ```
+
+This should be it. To check if we have it installed and up to date:
+
+```bash brew update  ```
+
+### SVN
+```bash brew install svn  ```
+
+### gfortran
+go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and install appropriate dmg for your computer. 
+
+#### more tricky dependencies: 
+* MPI
+* HDF5
+* HYPRE
+
+
+
+
+
+
