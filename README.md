@@ -211,7 +211,7 @@ We need to change paths to the dependencies in Makefile.h file.
 
 <br>
 
-Makefile.h is in ```sites/Prototypes/Darwin``` directory.
+Makefile.h is in ```FLASH4.8/sites/Prototypes/Darwin``` directory.
 
 in this file paths for dependencies should look like this:
 
