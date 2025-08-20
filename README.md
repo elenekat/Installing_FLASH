@@ -191,7 +191,7 @@ cd ..
 You should see there 3 directories with the source for openMPI, hdf5 & hypre which can be removed if you wish. 
 
 Check if you have all three of them in this directory: 
-```bash /usr/local/flash-deps```
+```/usr/local/flash-deps```
 
 ---
 <br>
