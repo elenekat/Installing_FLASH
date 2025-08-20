@@ -260,6 +260,29 @@ This should be it. Try running some test problem now. Some errors might arise wh
      <br>
      To fix it add this to the Makefile.h:
      ```bash LIB_LAPACK = -llapack```
+     and it looks like this in working Makefile.h:
+  
+      ```bash 
+      # Lapck path
+      LIB_LAPACK = -llapack
+      
+      LIB_OPT   =
+      LIB_DEBUG =
+      LIB_TEST  =
+      
+      #LIB_HDF5  = -L${HDF5_PATH}/lib -lhdf5 /usr/lib64/libz.a
+      LIB_HDF5  = -L${HDF5_PATH}/lib -lhdf5 -DH5_USE_16_API
+      
+      LIB_PAPI  =
+      LIB_MATH  =
+      
+      LIB_MPI   = 
+      #LIB_NCMPI = -L $(NCMPI_PATH)/lib -lpnetcdf
+      LIB_MPE   =
+      
+      LIB_HYPRE = -L${HYPRE_PATH}/lib -lHYPRE
+      ```  
+      
 * Some errors might be answered in FLASH emails. 
 
 
