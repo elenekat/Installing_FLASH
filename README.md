@@ -238,7 +238,7 @@ CPPCOMP = $(MPI_PATH)/bin/mpiCC
 LINK    = $(MPI_PATH)/bin/mpif90
 ```
 
-This should be it. Try running some test problem now. 
+This should be it. Try running some test problem. 
 
 # 4. Fighting Errors
 
