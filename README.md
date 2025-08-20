@@ -8,14 +8,6 @@ We need to install dependencies. Open terminal and copy these commands there.
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
    
-to check if you have something you can type in terminal:
-```bash
-which python
-```
-or
-```bash
-python --version
-```
 ---
 
 ### xcode
@@ -68,6 +60,16 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 * HDF5
 * HYPRE
 
+
+
+# note: to check if you have something you can type in terminal:
+```bash
+which python
+```
+or
+```bash
+python --version
+```
 
 
 
