@@ -2,6 +2,9 @@
 
 We need to install dependencies. Open terminal and copy these commands there.  
 <br>
+<br>
+<br>
+
 # Some easy dependencies we need: 
 * C compiler
 * Fortran compiler
@@ -66,7 +69,9 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 
 
 
-
+<br>
+<br>
+<br>
 # more tricky dependencies that we need to install: 
 * MPI
 * HDF5
