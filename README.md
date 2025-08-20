@@ -109,7 +109,8 @@ brew make -j all
 sudo make install
 ```
 
-using sudo will ask you for password.
+note: using sudo will ask you for password.
+
 <br>
 cd out of openMPI directory
 
