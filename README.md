@@ -118,9 +118,7 @@ cd out of openMPI directory
 cd ..
 ```
 
-this is version 4.1.4, if you want newer version, you can download it from: https://www.open-mpi.org/ 
-<br>
-Same is for hdf5 and hypre you can update to newer version.
+note: this is version 4.1.4, if you want newer version, you can download it from: https://www.open-mpi.org/ 
 
 ---
 ### ⭐ hdf5
@@ -183,6 +181,7 @@ make -j
 ```bash 
 sudo make install
 ```
+note: you can also update hdf5 and hypre to newer version, but this versions work fine.
 
 That should be it. cd out of hypre directory:
 
