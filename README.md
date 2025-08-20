@@ -70,10 +70,6 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 ---
 
 
-
-
-<br>
-<br>
 <br>
 
 ## 🚀 more tricky dependencies we need: 
@@ -194,8 +190,6 @@ Check if you have all three of them in this directory:
 ```/usr/local/flash-deps```
 
 ---
-<br>
-<br>
 <br>
 
 # 2. Get FLASH Code
