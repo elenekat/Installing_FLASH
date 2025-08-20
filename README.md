@@ -31,7 +31,7 @@ To install it type:
 
 follow directions in terminal: you will need to enter your admin password and then it will tell you what it is going to install and ask you to click enter.
 
-next step is to add brew in your path. It will tell you which two commands to run it will be two commands like this: 
+next step is to add brew in your path. It will tell you which two commands to run, they will look like: 
 
 ```bash 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
@@ -40,10 +40,14 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-This should be it. To check if we have it installed and up to date:
-
-```bash 
-brew update
+This should be it. note: to check if you have it installed (or something else like python) you can type in terminal:
+```bash
+which brew
+```
+this will tell you path of it as well
+or if you just want to check which version you have:
+```bash
+brew --version
 ```
 
 ### SVN
@@ -62,7 +66,6 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 * HDF5
 * HYPRE
 
-we are installig them in ```/usr/local``` directory.
 ---
 ### openMPI
 
@@ -93,26 +96,99 @@ sudo make install
 
 this is version 4.1.4, if you for some reason need newer version, you can download it from: https://www.open-mpi.org/ 
 
+---
+### hdf5
 
+cd out of openMPI directory
 
-
-
-
-
-
-
-
-
-
-
-# note: to check if you have something you can type in terminal:
-```bash
-which python
+```bash 
+cd ..
 ```
-or
-```bash
-python --version
+
+```bash 
+git clone https://github.com/HDFGroup/hdf5.git
 ```
+
+```bash 
+cd hdf5
+```
+
+```bash 
+git checkout hdf5-1_13_1
+```
+
+```bash 
+CC=/usr/local/flash-deps/openMPI/bin/mpicc FC=/usr/local/flash-deps/openMPI/bin/mpif90 ./configure --enable-parallel --enable-fortran --prefix=/usr/local/flash-deps/hdf5
+```
+
+```bash 
+make -j all
+```
+
+```bash 
+sudo make install
+```
+---
+### hypre
+
+cd out of hdf5 directory
+
+```bash 
+cd ..
+```
+
+```bash 
+git clone https://github.com/hypre-space/hypre.git
+```
+
+```bash 
+cd hypre
+```
+
+```bash 
+git checkout v2.24.0
+```
+
+```bash 
+cd src
+```
+
+```bash 
+CC=/usr/local/flash-deps/openMPI/bin/mpicc ./configure --prefix=/usr/local/flash-deps/hypre
+```
+
+```bash 
+make -j
+```
+
+```bash 
+sudo make install
+```
+
+That should be it. cd out of hypre directory:
+
+```bash 
+cd ..
+```
+You should see there 3 directories with the source for openMPI, hdf5 & hypre which can be removed if you wish. 
+
+Check if you have all three of them in this directory: ```bash /usr/local/flash-deps```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
