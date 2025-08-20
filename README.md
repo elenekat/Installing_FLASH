@@ -111,8 +111,9 @@ sudo make install
 
 using sudo will ask you for password.
 
-this is version 4.1.4, if you for some reason need newer version, you can download it from: https://www.open-mpi.org/ 
-Same is for hdf5 and hypre you can update to newer version but this versions work fine too. 
+this is version 4.1.4, if you want newer version, you can download it from: https://www.open-mpi.org/ 
+<br>
+Same is for hdf5 and hypre you can update to newer version.
 
 ---
 ### ⭐ hdf5
