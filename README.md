@@ -28,16 +28,17 @@ To install it type:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-follow directions in terminal: you will need to enter your admin password and then it will tell you what it is going to install and ask you to click enter.
+follow directions in terminal: 
+* you will need to enter your admin password and then it will tell you what it is going to install and ask you to click enter.
 
-next step is to add brew in your path. It will tell you which two commands to run, they will look like: 
+* next step is to add brew in your path. It will tell you which two commands to run, they will look like: 
 
-```bash 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
-```
-```bash 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
+   ```bash 
+   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+   ```
+   ```bash 
+   eval "$(/opt/homebrew/bin/brew shellenv)"
+   ```
 
 This should be it. note: to check if you have it installed (or something else like python) you can type in terminal:
 ```bash
