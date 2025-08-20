@@ -1,4 +1,4 @@
-# Installing_FLASH
+# Installing FLASH on Local Machine
 
 We need to install dependencies: 
 
