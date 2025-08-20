@@ -4,9 +4,9 @@ We need to install dependencies. Open terminal and copy these commands there.
 
 ## Some easy dependencies we need: 
 * C compiler
-* "make" utility
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
+* "make" utility
    
 ---
 
