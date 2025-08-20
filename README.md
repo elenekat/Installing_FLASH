@@ -262,8 +262,7 @@ This should be it. Try running some test problem now. Some errors might arise wh
      ```bash LIB_LAPACK = -llapack```
      and it looks like this in working Makefile.h:
   
-      ```bash 
-      # Lapck path
+      ```bash
       LIB_LAPACK = -llapack
       
       LIB_OPT   =
@@ -281,8 +280,13 @@ This should be it. Try running some test problem now. Some errors might arise wh
       LIB_MPE   =
       
       LIB_HYPRE = -L${HYPRE_PATH}/lib -lHYPRE
-      ```  
-      
+      ```
+
+      also check that flags look like this: 
+      ```bash
+      FFLAGS_HYPRE = -I${HYPRE_PATH}/include
+      CFLAGS_HYPRE = -I${HYPRE_PATH}/include
+      ```
 * Some errors might be answered in FLASH emails. 
 
 
