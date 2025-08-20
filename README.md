@@ -211,7 +211,7 @@ We need to change paths to the dependencies in Makefile.h file.
 
 <br>
 
-Makefile.h is in ```bash sites/Prototypes/Darwin``` directory.
+Makefile.h is in ```sites/Prototypes/Darwin``` directory.
 
 in this file paths for dependencies should look like this:
 
@@ -254,16 +254,18 @@ This should be it. Try running some test problem now. Some errors might arise wh
    make clean
    ```
    for example I had:
-   ```bash Error: Cannot open module file ‘cond_interface.mod’ ```
+   ```Error: Cannot open module file ‘cond_interface.mod’ ```
    and it was fixed after using make clean
 
-* ```bash gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
+* ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
      <br>
      To fix it add this to the Makefile.h:
-     ```bash LIB_LAPACK = -llapack```
+     ```fortran
+     LIB_LAPACK = -llapack
+     ```
      and it looks like this in working Makefile.h:
   
-      ```bash
+      ```fortran
       LIB_LAPACK = -llapack
       
       LIB_OPT   =
@@ -284,7 +286,7 @@ This should be it. Try running some test problem now. Some errors might arise wh
       ```
 
       also check that flags look like this: 
-      ```bash
+      ```fortran
       FFLAGS_HYPRE = -I${HYPRE_PATH}/include
       CFLAGS_HYPRE = -I${HYPRE_PATH}/include
       ```
