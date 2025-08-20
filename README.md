@@ -240,12 +240,12 @@ CPPCOMP = $(MPI_PATH)/bin/mpiCC
 LINK    = $(MPI_PATH)/bin/mpif90
 ```
 
-This should be it. Try running some test problem now. 
+This should be it. Try running some test problem now. Some errors might arise while trying to compile.
+
 
 # 4. Fighting Errors
-Some errors might arise while trying to compile.
 
-Errors that I had:
+### Errors that I had:
 
 * Some of other errors I had were fixed after using
 
