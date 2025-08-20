@@ -250,47 +250,52 @@ This should be it. Try running some test problem now. Some errors might arise wh
 
 * Some of other errors I had were fixed after using
 
-   ```bash 
-   make clean
-   ```
-   for example I had:
-   ```Error: Cannot open module file ‘cond_interface.mod’ ```
-   and it was fixed after using make clean
+```bash
+make clean
+```
+error I had:
+```Error: Cannot open module file ‘cond_interface.mod’ ```
+and it was fixed after using make clean
 
 * ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
-     <br>
-     To fix it add this to the Makefile.h:
-     ```fortran
-     LIB_LAPACK = -llapack
-     ```
-     and it looks like this in working Makefile.h:
-  
-      ```fortran
-      LIB_LAPACK = -llapack
+<br>
+To fix it add this to the Makefile.h:
+```fortran
+LIB_LAPACK = -llapack
+```
+and it looks like this in working Makefile.h:
+``` fortran
+LIB_LAPACK = -llapack
       
-      LIB_OPT   =
-      LIB_DEBUG =
-      LIB_TEST  =
+LIB_OPT   =
+LIB_DEBUG =
+LIB_TEST  =
       
-      #LIB_HDF5  = -L${HDF5_PATH}/lib -lhdf5 /usr/lib64/libz.a
-      LIB_HDF5  = -L${HDF5_PATH}/lib -lhdf5 -DH5_USE_16_API
+#LIB_HDF5  = -L${HDF5_PATH}/lib -lhdf5 /usr/lib64/libz.a
+LIB_HDF5  = -L${HDF5_PATH}/lib -lhdf5 -DH5_USE_16_API
       
-      LIB_PAPI  =
-      LIB_MATH  =
+LIB_PAPI  =
+LIB_MATH  =
       
-      LIB_MPI   = 
-      #LIB_NCMPI = -L $(NCMPI_PATH)/lib -lpnetcdf
-      LIB_MPE   =
+LIB_MPI   = 
+#LIB_NCMPI = -L $(NCMPI_PATH)/lib -lpnetcdf
+LIB_MPE   =
       
-      LIB_HYPRE = -L${HYPRE_PATH}/lib -lHYPRE
-      ```
+LIB_HYPRE = -L${HYPRE_PATH}/lib -lHYPRE
+```
 
-      also check that flags look like this: 
-      ```fortran
-      FFLAGS_HYPRE = -I${HYPRE_PATH}/include
-      CFLAGS_HYPRE = -I${HYPRE_PATH}/include
-      ```
-* Some errors might be answered in FLASH emails. 
+     
+also check that flags look like this: 
+```fortran
+FFLAGS_HYPRE = -I${HYPRE_PATH}/include
+CFLAGS_HYPRE = -I${HYPRE_PATH}/include
+```
+
+* Some errors might be answered in FLASH emails.
+error I had:
+```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
+in Makefile.h comment out line “iso_c_binding.mod".
+
 
 
 
