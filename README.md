@@ -7,7 +7,8 @@ We need to install dependencies. Open terminal and copy these commands there.
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
 * "make" utility
-   
+
+To get them we need: 
 ### xcode
 
 ```bash 
