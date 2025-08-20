@@ -1,4 +1,4 @@
 # Installing_FLASH
 ### xcode
 
-bash xcode-select --install
+<pre> ```bash xcode-select --install ``` </pre>
