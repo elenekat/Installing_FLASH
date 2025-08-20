@@ -257,7 +257,7 @@ To fix it add this to the Makefile.h:
 ```fortran
 LIB_LAPACK = -llapack
 ```
-and it looks like this in working Makefile.h:
+and in Makefile.h it should look like this:
 ``` fortran
 LIB_LAPACK = -llapack
       
