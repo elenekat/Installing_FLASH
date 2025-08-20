@@ -7,16 +7,19 @@ We need to install dependencies. Open terminal and copy these commands there.
 * "make" utility
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
+<h1 style="color:blue">My Notes</h1>
+ 
+---
+to check if you have something you can type in terminal:
+```bash
+which python
+```
+or
+```bash
+python --version
+```
+---
 
-  to check if you have something you can type in terminal:
-  ```bash
-  which python
-  ```
-  or
-  ```bash
-  python --version
-  ```
-  
 ### xcode
 
 ```bash 
