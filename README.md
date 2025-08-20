@@ -1,10 +1,10 @@
 # Installing FLASH on MacOS
 
 There is 4 steps: 
-1. we need to install dependencies for FLASH, 
+1. we need to install dependencies for FLASH
 2. download and untar code itself
 3. change paths for dependencies
-4. fight with errors until it agrees to compile
+4. might need to fight with errors
 
 # 1. Install dependencies
 
