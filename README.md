@@ -3,7 +3,8 @@
 We need to install dependencies: 
 
 ## easy ones: 
-* C compiler and "make" utility
+* C compiler
+* "make" utility
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
 
