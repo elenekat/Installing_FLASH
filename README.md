@@ -14,6 +14,8 @@ There is 4 steps:
 * Python (you can get it from python.org if you don't have it already)
 * utilities like "make" and "git"
 
+---
+
 Open terminal and copy these commands there. We will need:
 ### ⭐ xcode
 
