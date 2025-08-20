@@ -1,4 +1,4 @@
-# Installing FLASH on Local Machine
+# Installing FLASH on MacOS
 
 We need to install dependencies: 
 
