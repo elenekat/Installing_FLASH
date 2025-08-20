@@ -18,7 +18,7 @@ Open terminal and copy these commands:
 
 ```bash xcode-select --install```
 
-This installs the Xcode Command Line Tools package, not full xcode. We need this to get C compilers and git installed and tools like "make". 
+This installs the Xcode Command Line Tools package, not full xcode. We need this to get C compilers, git and tools like "make". 
 
 ### Homebrew
 We need package manager to install tricky dependencies for FLASH. Recommended one is Homebrew (go to https://brew.sh/ for all information):
