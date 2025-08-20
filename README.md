@@ -207,6 +207,9 @@ tar zvf FLASH.4.8.tar
 
 # Change Makefile.h
 We need to change paths to the dependencies in Makefile.h file. 
+
+<br>
+
 Makefile.h is in ```bash sites/Prototypes/Darwin``` directory.
 
 in this file paths for dependencies should look like this:
@@ -239,11 +242,24 @@ LINK    = $(MPI_PATH)/bin/mpif90
 
 This should be it. Try running some test problem now. 
 
-Some errors might arise while trying to compile. Some of them were fixed after using 
+# 4. Fighting Errors
+Some errors might arise while trying to compile.
 
-```bash 
-make clean
-```
+Errors that I had:
+
+* Some of other errors I had were fixed after using
+
+   ```bash 
+   make clean
+   ```
+   for example I had:
+   ```bash Error: Cannot open module file ‘cond_interface.mod’ ```
+   and it was fixed after using make clean
+
+* ```bash gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```:
+     Add this to the Makefile.h:
+     ```bash LIB_LAPACK = -llapack```
+* Some errors might be answered in FLASH emails. 
 
 
 
