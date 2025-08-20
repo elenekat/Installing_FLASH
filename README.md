@@ -8,7 +8,7 @@ There is 4 steps:
 
 # 1. Install dependencies
 
-## Some easy dependencies we need: 
+## 🚀 Some easy dependencies we need: 
 * C compiler
 * Fortran compiler
 * Python (you can get it from python.org if you don't have it already)
@@ -76,7 +76,7 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 <br>
 <br>
 
-## more tricky dependencies that we need to install: 
+## 🚀 more tricky dependencies that we need to install: 
 * MPI
 * HDF5
 * HYPRE
