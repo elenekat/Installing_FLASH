@@ -195,7 +195,7 @@ Check if you have all three of them in this directory:
 
 # 2. Get FLASH Code
 
-download the tar file of code and in same directory untar it (change name for different versions):
+download the tar file and untar it (change name for different versions):
 
 ```bash 
 tar zvf FLASH.4.8.tar
