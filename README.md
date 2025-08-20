@@ -189,7 +189,6 @@ You should see there 3 directories with the source for openMPI, hdf5 & hypre whi
 Check if you have all three of them in this directory: 
 ```/usr/local/flash-deps```
 
----
 <br>
 
 # 2. Get FLASH Code
