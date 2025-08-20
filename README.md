@@ -198,7 +198,7 @@ Check if you have all three of them in this directory:
 <br>
 <br>
 
-# Get FLASH Code
+# 2. Get FLASH Code
 
 download the tar file of code and in same directory untar it (change name for different versions):
 
@@ -206,7 +206,7 @@ download the tar file of code and in same directory untar it (change name for di
 tar zvf FLASH.4.8.tar
 ```
 
-# Change Makefile.h
+# 3. Change Makefile.h
 We need to change paths to the dependencies in Makefile.h file. 
 
 <br>
