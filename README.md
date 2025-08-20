@@ -5,7 +5,7 @@ We need to install dependencies:
 ## easy ones: 
 * C compiler and "make" utility
 * Fortran compiler
-* Python (you probably have it, or you can get it from python.org)
+* Python (you can get it from python.org if you don't have it already)
 
   to check if you have something you can type in terminal:
   ```bash which python```
