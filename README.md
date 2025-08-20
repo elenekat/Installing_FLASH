@@ -5,10 +5,6 @@ There is 3 steps: we need to install dependencies for FLASH, download and untar 
 # 1. Install dependencies
 Open terminal and copy these commands there.  
 
-<br>
-<br>
-<br>
-
 # Some easy dependencies we need: 
 * C compiler
 * Fortran compiler
