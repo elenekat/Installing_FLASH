@@ -110,6 +110,12 @@ sudo make install
 ```
 
 using sudo will ask you for password.
+<br>
+cd out of openMPI directory
+
+```bash 
+cd ..
+```
 
 this is version 4.1.4, if you want newer version, you can download it from: https://www.open-mpi.org/ 
 <br>
@@ -117,13 +123,6 @@ Same is for hdf5 and hypre you can update to newer version.
 
 ---
 ### ⭐ hdf5
-
-cd out of openMPI directory
-
-```bash 
-cd ..
-```
-
 ```bash 
 git clone https://github.com/HDFGroup/hdf5.git
 ```
@@ -147,14 +146,14 @@ make -j all
 ```bash 
 sudo make install
 ```
----
-### ⭐ hypre
 
 cd out of hdf5 directory
 
 ```bash 
 cd ..
 ```
+---
+### ⭐ hypre
 
 ```bash 
 git clone https://github.com/hypre-space/hypre.git
