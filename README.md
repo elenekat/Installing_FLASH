@@ -46,7 +46,7 @@ and follow directions in terminal:
    eval "$(/opt/homebrew/bin/brew shellenv)"
    ```
 
-This should be it. note: to check if you have it installed (or something else like python) you can type in terminal:
+note: to check if you have it installed (or something else like python) you can type in terminal:
 ```bash
 which brew
 ```
