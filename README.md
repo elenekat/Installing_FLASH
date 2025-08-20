@@ -1,6 +1,6 @@
 # Installing FLASH on MacOS
 
-We need to install dependencies: 
+We need to install dependencies. Open terminal and copy these commands there.  
 
 ## easy ones: 
 * C compiler
@@ -17,8 +17,6 @@ We need to install dependencies:
   python --version
   ```
   
-Open terminal and copy these commands: 
-
 ### xcode
 
 ```bash 
