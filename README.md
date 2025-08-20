@@ -26,7 +26,7 @@ This installs the Xcode Command Line Tools package, not full xcode. We need it t
 ---
 
 ### ⭐ Homebrew
-We need package manager to install tricky dependencies for FLASH. Recommended one is Homebrew (go to https://brew.sh/ for all information). 
+We need package manager to install some other dependencies for FLASH. Recommended one is Homebrew (go to https://brew.sh/ for all information). 
 
 To install it type:
 
