@@ -15,7 +15,7 @@ There is 4 steps:
 * "make" utility
 
 Open terminal and copy these commands there. We will need:
-### 🚀 xcode
+### ⭐ xcode
 
 ```bash 
 xcode-select --install
@@ -25,7 +25,7 @@ This installs the Xcode Command Line Tools package, not full xcode. We need this
 
 ---
 
-### Homebrew
+### ⭐ Homebrew
 We need package manager to install tricky dependencies for FLASH. Recommended one is Homebrew (go to https://brew.sh/ for all information). 
 
 To install it type:
@@ -58,13 +58,13 @@ brew --version
 
 ---
 
-### SVN
+### ⭐ SVN
 ```bash 
 brew install svn
 ```
 ---
 
-### gfortran
+### ⭐ gfortran
 go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and install appropriate dmg for your computer. 
 
 ---
@@ -82,7 +82,7 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 * HYPRE
 
 ---
-### openMPI
+### ⭐ openMPI
 
 ```bash 
 brew curl https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.4.tar.gz \
@@ -115,7 +115,7 @@ this is version 4.1.4, if you for some reason need newer version, you can downlo
 Same is for hdf5 and hypre you can update to newer version but this versions work fine too. 
 
 ---
-### hdf5
+### ⭐ hdf5
 
 cd out of openMPI directory
 
@@ -147,7 +147,7 @@ make -j all
 sudo make install
 ```
 ---
-### hypre
+### ⭐ hypre
 
 cd out of hdf5 directory
 
