@@ -48,6 +48,10 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 * HYPRE
 
 
+```bash
+ls
+```
+
 
 
 
