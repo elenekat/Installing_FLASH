@@ -1,7 +1,7 @@
 # Installing FLASH on MacOS
 
 There is 4 steps: 
-1. we need to install dependencies for FLASH
+1. install dependencies for FLASH
 2. download and untar code itself
 3. change paths for dependencies
 4. might need to fight with errors when compiling
@@ -201,7 +201,7 @@ tar zvf FLASH.4.8.tar
 
 <br> 
 
-# 3. Change Makefile.h
+# 3. Changing paths for dependencies
 We need to change paths to the dependencies in Makefile.h file. 
 
 <br>
