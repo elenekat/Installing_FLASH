@@ -259,7 +259,7 @@ To fix it add this to the Makefile.h:
 ```fortran
 LIB_LAPACK = -llapack
 ```
-and in Makefile.h it should look like this:
+Makefile.h should look like this:
 ``` fortran
 LIB_LAPACK = -llapack
       
@@ -287,7 +287,7 @@ FFLAGS_HYPRE = -I${HYPRE_PATH}/include
 CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
 
-Some errors are be answered in FLASH emails.
+Some errors are answered in [FLASH-USERS] emails.
 Error I had:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
 to fix it in Makefile.h comment out line “iso_c_binding.mod".
