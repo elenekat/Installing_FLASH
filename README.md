@@ -21,7 +21,7 @@ Open terminal and copy these commands there. We will need:
 xcode-select --install
 ```
 
-This installs the Xcode Command Line Tools package, not full xcode. We need this to get C compilers, "make" utility and git. 
+This installs the Xcode Command Line Tools package, not full xcode. We need it to get C compilers, "make" utility and git. 
 
 ---
 
