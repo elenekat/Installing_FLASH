@@ -277,6 +277,12 @@ also check that flags look like this:
 FFLAGS_HYPRE = -I${HYPRE_PATH}/include
 CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
+
+Some errors are answered in [FLASH-USERS] emails.
+Error I had:
+```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
+to fix it in Makefile.h comment out line “iso_c_binding.mod".
+
 Some other errors I had were fixed after using:
 
 ```bash
@@ -286,7 +292,3 @@ For example, error I had:
 ```Error: Cannot open module file ‘cond_interface.mod’```
 which was fixed after using make clean.
 
-Some errors are also answered in [FLASH-USERS] emails.
-Error I had:
-```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
-to fix it in Makefile.h comment out line “iso_c_binding.mod".
