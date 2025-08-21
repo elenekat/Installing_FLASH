@@ -244,16 +244,7 @@ This should be it. Try running some test problem.
 
 There might be some errors when trying to compile. 
 
-Some of errors I had were fixed after using:
-
-```bash
-make clean
-```
-For example, error I had:
-```Error: Cannot open module file ‘cond_interface.mod’ ```
-was fixed after using make clean.
-
-Another error I had: ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
+One of errors I had: ```gr_hypreF90CAdapters.c:9:10: fatal error: '_hypre_parcsr_ls.h' file not found```
 <br>
 To fix it add this to the Makefile.h:
 ```fortran
@@ -286,24 +277,16 @@ also check that flags look like this:
 FFLAGS_HYPRE = -I${HYPRE_PATH}/include
 CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
+Some other errors I had were fixed after using:
+
+```bash
+make clean
+```
+For example, error I had:
+```Error: Cannot open module file ‘cond_interface.mod’ ```
+was fixed after using make clean.
 
 Some errors are answered in [FLASH-USERS] emails.
 Error I had:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
 to fix it in Makefile.h comment out line “iso_c_binding.mod".
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
