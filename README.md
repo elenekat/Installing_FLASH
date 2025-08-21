@@ -53,7 +53,7 @@ note: to check if you have installed brew (or something else like python) you ca
 which brew
 ```
 this will tell you path of it as well
-or if you just want to check which version you have:
+or to just check which version you have:
 ```bash
 brew --version
 ```
