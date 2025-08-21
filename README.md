@@ -244,7 +244,7 @@ This should be it. Try running some test problem.
 
 There might be some errors when trying to compile. 
 
-Some of other errors I had were fixed after using:
+Some of errors I had were fixed after using:
 
 ```bash
 make clean
