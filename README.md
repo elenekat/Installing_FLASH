@@ -195,11 +195,20 @@ Check if you have all three of them in this directory:
 
 # 2. Get FLASH Code
 
-download the tar file and untar it (change name for different versions):
+Create working directory in your home directory where you would download and untar FLASH code.
+
+In your home direcoty:
+```bash 
+mkdir WorkDirectory
+```
+(you can change name of directory)
+
+download the tar file and untar it in that new direcotry (change name for different versions of code):
 
 ```bash 
 tar zvf FLASH4.8.tar
 ```
+
 
 <br> 
 
