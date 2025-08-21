@@ -37,7 +37,7 @@ To install it type:
 ```
 
 and follow directions in terminal: 
-* you will need to enter your admin password and then it will tell you what it is going to install and ask you to click enter.
+* you will need to enter your admin password. It will tell you what will be installed and ask you to click enter.
 
 * next step is to add brew in your path. It will tell you which two commands to run, they will look like: 
 
