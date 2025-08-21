@@ -179,7 +179,7 @@ make -j
 ```bash 
 sudo make install
 ```
-note: you can also update hdf5 and hypre to newer version, but this versions work fine.
+note: If you wish, you can also update hdf5 and hypre to newer version. 
 
 That should be it. cd out of hypre directory:
 
