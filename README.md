@@ -83,24 +83,24 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 ### ⭐ openMPI
 
 ```bash 
-brew curl https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.4.tar.gz \
+curl https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.4.tar.gz \
     --output openmpi-4.1.4.tar.gz 
 ```
 
 ```bash 
-brew tar -xvf openmpi-4.1.4.tar.gz
+tar -xvf openmpi-4.1.4.tar.gz
 ```
 
 ```bash 
-brew cd openmpi-4.1.4
+cd openmpi-4.1.4
 ```
 
 ```bash 
-brew ./configure --prefix=/usr/local/flash-deps/openMPI lt_prog_compiler_wl_FC='-Wl,'
+./configure --prefix=/usr/local/flash-deps/openMPI lt_prog_compiler_wl_FC='-Wl,'
 ```
 
 ```bash 
-brew make -j all
+make -j all
 ```
 
 ```bash 
