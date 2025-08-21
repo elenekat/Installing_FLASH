@@ -4,7 +4,7 @@ There is 4 steps:
 1. install dependencies for FLASH
 2. download and untar code
 3. change paths for dependencies
-4. might need to fight with errors when compiling
+4. might need to fight with some errors when compiling
 
 # 1. Install dependencies
 
