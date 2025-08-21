@@ -203,7 +203,7 @@ mkdir WorkDirectory
 ```
 (you can change name of directory)
 
-download the tar file and untar it in that new direcotry (change name for different versions of code):
+download the tar file and untar it in this new direcotry (change name for different versions of code):
 
 ```bash 
 tar zvf FLASH4.8.tar
