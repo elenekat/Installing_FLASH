@@ -85,7 +85,9 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 ```bash 
 brew install open-mpi
 ```
-(check: https://formulae.brew.sh/formula/open-mpi)
+(check out: 
+https://formulae.brew.sh/formula/open-mpi
+https://www.open-mpi.org/)
 
 This should install open-mpi into /opt/homebrew/Cellar
 
@@ -96,8 +98,6 @@ cd out of openMPI directory
 ```bash 
 cd ..
 ```
-
-note: this is version 4.1.4, if you want newer version, you can download it from: https://www.open-mpi.org/ 
 
 ---
 ### ⭐ hdf5
