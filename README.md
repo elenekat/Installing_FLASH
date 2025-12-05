@@ -79,7 +79,7 @@ go to https://github.com/fxcoudert/gfortran-for-macOS/releases, and download and
 * HDF5
 * HYPRE
 
-all of them can be installed with homebrew but here I'm installing just openMPI with homebrew. Just need to be careful about where they are installed when specifying paths in Makefile. In this case openMPI is in /opt/homebrew/Cellar and for paths its specified there. HDF5 and Hypre are in /usr/local/flash-deps. 
+Here I'm installing openMPI with homebrew everything else from cloning from git. In this case openMPI is in /opt/homebrew/Cellar. HDF5 and Hypre are in /usr/local/flash-deps. 
 
 ---
 ### ⭐ openMPI
