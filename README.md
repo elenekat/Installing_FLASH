@@ -214,9 +214,9 @@ ZLIB_PATH  =
 PAPI_PATH  =
 PAPI_FLAGS =
 
-LIB_NCMPI = /usr/local/flash-deps/openMPI
+LIB_NCMPI = /opt/homebrew/Cellar/open-mpi/5.0.8
 MPE_PATH   =
-MPI_PATH = /usr/local/flash-deps/openMPI
+MPI_PATH = /opt/homebrew/Cellar/open-mpi/5.0.8
 
 HYPRE_PATH = /usr/local/flash-deps/hypre
 ```
