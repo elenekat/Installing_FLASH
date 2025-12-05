@@ -220,7 +220,7 @@ MPI_PATH = /opt/homebrew/Cellar/open-mpi/5.0.8
 
 HYPRE_PATH = /usr/local/flash-deps/hypre
 ```
-
+Note: make sure paths are actually where dependencies are and double check versions too.
 and also need to change this lines:
 
 ```fortran
