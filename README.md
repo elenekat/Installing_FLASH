@@ -271,10 +271,11 @@ CFLAGS_HYPRE = -I${HYPRE_PATH}/include
 ```
 
 Some errors are answered in [FLASH-USERS] emails.
-Error I had:
+Error example:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
 to fix it in Makefile.h comment out line “iso_c_binding.mod".
 
+Error example:
 ```Driver_computeDt.F90:545:20:```
 Fix: add ```-fallow-argument-mismatch``` to FLAGS_OPT,
 FFLAGS_DEBUG, and FFLAGS_TEST in your Makefile.h
