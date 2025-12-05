@@ -102,6 +102,7 @@ cd ..
 
 ---
 ### ⭐ hdf5
+hdf5 and hypre have to be in /usr/local/flash-deps directory!
 ```bash 
 git clone https://github.com/HDFGroup/hdf5.git
 ```
