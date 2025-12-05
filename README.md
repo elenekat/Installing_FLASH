@@ -275,6 +275,25 @@ Error I had:
 ```Error: Reading module 'iso_c_binding.mod' at line 1 column 1: Unexpected EOF```
 to fix it in Makefile.h comment out line “iso_c_binding.mod".
 
+```Driver_computeDt.F90:545:20:```
+Fix: add ```-fallow-argument-mismatch``` to FLAGS_OPT,
+FFLAGS_DEBUG, and FFLAGS_TEST in your Makefile.h
+so it looks like: 
+```bash
+FFLAGS_OPT = -ggdb -c -O2 -fdefault-real-8 -fdefault-double-8 \
+-Wuninitialized -fallow-argument-mismatch
+
+FFLAGS_DEBUG = -ggdb -c -O0 -fdefault-real-8 -fdefault-double-8 \
+-pedantic -Wall -Wextra -Waliasing \
+-Wsurprising -Wconversion -Wunderflow \
+-ffpe-trap=invalid,zero,overflow -fbounds-check \
+-fimplicit-none -fstack-protector-all \
+-fallow-argument-mismatch
+
+FFLAGS_TEST = -ggdb -c -fdefault-real-8 -fdefault-double-8 \
+-ffree-line-length-none -fallow-argument-mismatch
+```
+
 Some other errors I had were fixed after using:
 
 ```bash
