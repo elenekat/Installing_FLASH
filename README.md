@@ -306,3 +306,32 @@ For example, error I had:
 ```Error: Cannot open module file ‘cond_interface.mod’```
 which was fixed after using make clean.
 
+```Error: Cannot open module file ‘conductivity_data.mod’ for reading at (1): No such file or directory compilation terminated```
+the fix has to do with on mac python being called 'python3'. The following worked for me:
+So normally when you type
+```bash
+which python
+```
+it says on mac that this doesn't exist. This is because mac uses python3. You also do not want python3 from homebrew in my case so type: 
+
+```bash
+brew uninstall python3
+```
+then 
+```bash
+which python3
+```
+now
+```bash
+sudo ln -sf /usr/local/bin/python3 /usr/local/bin/python
+```
+```bash
+which python
+```
+and you should see it say python. Then you want to create a file ```echo szhrc``` and add the following:
+
+```bash
+alias -g python="python3"
+```
+
+then either start a new terminal or type ```source ~/.zshrc```
