@@ -328,7 +328,7 @@ sudo ln -sf /usr/local/bin/python3 /usr/local/bin/python
 ```bash
 which python
 ```
-and you should see it say python. Then you want to create a file ```echo szhrc``` and add the following:
+and you should see it say python. Then you want to create a file ```echo zshrc``` and add the following:
 
 ```bash
 alias -g python="python3"
